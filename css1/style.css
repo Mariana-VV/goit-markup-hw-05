@@ -316,17 +316,11 @@ button:hover {
 /*  */
 /*  Секция чем мы занимаемся*/
 /*  */
-
-.activity-type {
-  display: inline-block;
-  width: 270px;
-
-  transform: translate(-50%, -50%);
-  outline: 1px solid grey;
-  background-color: rgba(47, 48, 58, 0.8);
+.activity-div {
+  position: relative;
 }
+
 .activity-section {
-  padding-right: 60px;
   padding-top: 94px;
   padding-bottom: 94px;
   font-weight: 700;
@@ -334,49 +328,40 @@ button:hover {
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: var(--color-aditional);
-}
-
-.activity-list {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  display: flex;
-}
-.activity-list li {
-  margin-right: 30px;
-}
-.activity-list li:last-child {
-  margin-right: 0;
 }
 .activity-title {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
-  margin: 0;
-  margin-bottom: 50px;
+  color: #212121;
 }
-.activity-img {
-  display: block;
-}
-/* .activity-div {
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  outline: 1px solid grey;
+.activity-list {
   display: flex;
-} */
-.activity {
-  font-weight: 700px;
+  padding: 0;
+  margin: 0;
+}
+.activity-list li:not(:last-child) {
+  margin-right: 30px;
+  width: 370px;
+}
+
+.activity-type {
+  margin: 0;
+  display: block;
+  width: 370px;
+  height: 70px;
+  padding: 27px 85px;
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.16;
+  line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /*  */
