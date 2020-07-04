@@ -127,7 +127,7 @@ header {
   display: none;
 }
 
-.site-nav-link:active.site-nav-link::after {
+.site-nav-list:active.site-nav-list .link::after {
   display: block;
 }
 
