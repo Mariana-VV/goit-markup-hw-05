@@ -18,7 +18,6 @@ html {
 
 body {
   padding: 0;
-
   background: var(--color-aditional);
   font-family: Roboto, sans-serif;
   font-weight: 500px;
@@ -27,6 +26,7 @@ body {
 }
 
 .logo-block {
+  min-height: inherit;
   margin-right: 85px;
 }
 
@@ -58,6 +58,7 @@ h2 {
 }
 
 header {
+  min-height: 80px;
   background: #ffffff;
 }
 
@@ -73,6 +74,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: inherit;
 }
 
 ul {
@@ -93,8 +95,11 @@ a {
 /* / */
 /* .auth-site-container */
 /* / */
-.auth-site-container {
-  margin-left: 305px;
+
+
+.auth-site-block {
+  min-height: inherit;
+
 }
 
 .auth-site-list {
@@ -123,6 +128,19 @@ a {
   letter-spacing: 0.02em;
   color: #757575;
   height: 20px;
+}
+
+.site-nav-list .current::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  opacity: 1;
 }
 
 .auth-site-list .link:hover,
@@ -157,12 +175,14 @@ a {
 
 }
 
+
 /*  */
 /* Site-nav */
 /*  */
 
 
 .site-nav-block {
+  min-height: inherit;
   margin-right: 305px;
 }
 
@@ -180,6 +200,9 @@ a {
 
 
 .site-nav-list .link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration-line: none;
   color: #212121;
   font-style: normal;
