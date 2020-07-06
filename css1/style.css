@@ -43,6 +43,7 @@ h5 {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  min-height: inherit;
 }
 
 /*  */
@@ -64,7 +65,7 @@ header {
 
 .logo-block {
   margin-right: 85px;
-  min-height: inherit;
+
 }
 
 .logo {
@@ -85,7 +86,7 @@ header {
 }
 
 .site-nav-block {
-  min-height: inherit;
+
   margin-right: 305px;
 }
 
@@ -137,9 +138,7 @@ header {
 /*  auth-site*/
 /*  */
 
-.auth-site-block {
-  min-height: inherit;
-}
+.auth-site-block {}
 
 .auth-site-list {
   display: flex;
@@ -198,6 +197,7 @@ header {
 /*  */
 /*  */
 /* Герой */
+/*  */
 /*  */
 
 .hero {
